@@ -236,6 +236,8 @@ class Miau
 
     static void Salvar_tarefas()
     {
+        // ISSO FOI SÓ UM TESTE PARA PODER SALVAR AS TAREFAS EM UM ARQUIVO.TXT (talvez isso funcione só para o meu pc AINDA)
+        
         if (tarefas.Count == 0)
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -257,7 +259,7 @@ class Miau
             Console.ForegroundColor = ConsoleColor.Black;
         }
 
-        using (StreamWriter writer = new StreamWriter(@$"C:\Users\User\Desktop\miau.txt"))
+        using (StreamWriter writer = new StreamWriter(@$"C:\Users\User\Desktop\miau.txt")) //eu adiciono essa parte pro usuario escolher mais tarde...w
         {
             for (int i = 0; i < tarefas.Count; i++)
             {
